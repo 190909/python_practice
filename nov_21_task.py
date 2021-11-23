@@ -33,6 +33,8 @@ if(0 <= mark and mark <= 100):
         print("D grade")
     elif mark>=50 and mark >=59:
         print("E grade")
+        
+      
     elif mark > 0 and mark < 50:
         print("Fail mark")
     
@@ -63,4 +65,26 @@ else:
     elif(n>20):
         print("Not Weird")
     
-              
+ #whether the length is odd or even
+li=[123, 124, 125,130,131]
+i=len(li)
+if(len(li)%2 ==0):
+    print (" the lenght is even")
+else:
+    print(" the length is odd")
+
+#whether the number is armstrong number or not
+num=int(input("enter the number to be checked: "))
+l=len(str(num))
+sum=0
+temp=num;
+while (temp>0):
+    digit=temp%10
+    sum+= digit **3
+    temp = temp //10
+
+if num == sum:
+    print(num,"is an armstrong number")
+else:
+    print(num,"is not an armstrong number")
+             
