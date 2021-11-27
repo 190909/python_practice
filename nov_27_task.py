@@ -57,6 +57,31 @@ print("no.of non palindromes:",len(no))
  
 #task5:
 
+#task7:
+#fibbonacci series:
+n=int(input("enter the no.of output: "))
+a=0
+b=1
+if(n==1):
+    print(a)
+else:
+    print(a)
+    print(b)
+    for i in range(2,n):
+        c=a+b
+        a = b
+        b = c
+        print(c)
+        
+        
+#task7:
+#fibbonacci series
+n=int(input("enter the no.of elements:"))
+seq=[0,1]
+for i in range(2,n):
+    nex=seq[-1]+seq[-2]
+    seq.append(nex)
+print(seq)
 
 
 
@@ -88,4 +113,71 @@ while(d>=200):
     if(d%8==0):
         print(d)
     d=d-1
+
+
+ #task11:
+#dynamic list and positive negative
+x=[]
+positive=[]
+negative=[]
+zero=[]
+n=int(input("enter the length of the list:"))
+for i in range(1,n+1):
+    k=int(input("value:"))
+    x.append(k)
+print(x)
+
+
+for j in x:
+    if(j>0):
+        positive.append(j)
+    elif(j<0):
+        negative.append(j)
+    elif(j==0):
+        zero.append(j)
+print(positive)
+print("no. of positive elements is:",len(positive))
+print(negative)
+print("no. of negative elements is:",len(negative))
+print(zero)
+print("no. of zero is:",len(zero))
+  
+
+    
+#task12:
+n=int(input("enter the number: "))
+m=int(input("enter the second number: "))
+for i in range(n,m+1):
+    if(i%3==0 and i%5==0):
+        print(i,"fizzbuzz")
+    elif(i%3==0):
+        print(i,"fizz")
+    elif(1%5==0):
+        print(1,"buzz")
+
+        
+#task14:
+#sum of digits
+n=int(input("enter the number :"))
+total=0
+while(n>0):
+    digit=n%10
+    total=total+digit
+    n=n//10
+print("the sum of digits is: ",total)
+
+
+
+#task15:
+#multiples of the number
+n=int(input("enter the number :"))
+total=1
+while(n>0):
+    digit=n%10
+    total=total*digit
+    n=n//10
+print("the sum of digits is: ",total)
+
+
+    
 
