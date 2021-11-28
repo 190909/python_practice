@@ -56,6 +56,25 @@ print("no.of non palindromes:",len(no))
 
  
 #task5:
+#to get the no.strings containing vowels and consonants
+def diff(a,vowel):
+    return(list(set(a)-set(vowel)))
+           
+a=["hi","ggg","hello","ravi","bbbb","zzz","yyyy"]
+vow={"a","e","i","o","u"}
+vowel=[]
+vow_count=0
+non=[]           
+for i in a:
+    for j in i:
+        if j in vow:
+            vowel.append(i)
+            break
+non=diff(a,vowel)       
+print("the no.of strings containing vowels are:",len(vowel),"\n",vowel)
+print("the no.of strings not containing vowels are:",len(non),"\n",non)
+
+
 
 #task7:
 #fibbonacci series:
