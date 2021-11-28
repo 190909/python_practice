@@ -76,6 +76,24 @@ print("the no.of strings not containing vowels are:",len(non),"\n",non)
 
 
 
+#task6:
+#same last letters
+st=input("enter the elements of the list:  ")
+lis=st.split()
+yes=[]
+no=[]
+for i in lis:
+    if(i[0]==i[-1]):
+        yes.append(i)
+    else:
+        no.append(i)
+print("\n",yes)
+print("same first and last letters are: ",len(yes),"\n")
+print(no)
+print("different first and last letters are: ",len(no))
+        
+
+    
 #task7:
 #fibbonacci series:
 n=int(input("enter the no.of output: "))
@@ -134,6 +152,24 @@ while(d>=200):
     d=d-1
 
 
+#task10:
+#armstrong number or not
+num=int(input("enter the number to be checked: "))
+l=len(str(num))
+sum=0
+temp=num;
+while (temp>0):
+    digit=temp%10
+    sum+= digit **3
+    temp = temp //10
+
+if num == sum:
+    print(num,"is an armstrong number")
+else:
+    print(num,"is not an armstrong number")
+             
+       
+    
  #task11:
 #dynamic list and positive negative
 x=[]
@@ -173,6 +209,18 @@ for i in range(n,m+1):
         print(i,"fizz")
     elif(1%5==0):
         print(1,"buzz")
+        
+ 
+#task13:
+#factorial of a number
+n=int(input("enter the no:"))
+factorial=1
+if n==0:
+    print(" the factorial of 0 is 1")
+else:
+    for i in range(1,n+1):
+        factorial=factorial*i
+print("\nthe factorial of ",n,"is", factorial)
 
         
 #task14:
