@@ -151,6 +151,14 @@ while(d>=200):
         print(d)
     d=d-1
 
+ 
+#task9:
+#printing elements of list using while loop
+li=[1,2,2,3,4,5,6,7,8,9,9]
+i=0
+while i <len(li):
+    print(li[i])
+    i=i+1
 
 #task10:
 #armstrong number or not
